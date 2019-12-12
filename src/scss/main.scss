@@ -1,0 +1,20 @@
+
+//@import "carousel" par exemple mais avec le chemin complet depuis node_modules
+//@import "stellarnav" par exemple
+
+@import "common/variables";
+
+@import "../../node_modules/bootstrap/scss/bootstrap"; // lien vers boostrap placé dans node_modules
+
+@import "common/fonts";
+@import "common/mixins";
+@import "common/global";
+
+@import "components/buttons";
+//@import "components/carousel"; si on a un carousel
+@import "components/forms";
+
+@import "layouts/header";
+@import "layouts/navigation";
+@import "layouts/footer";
+@import "layouts/home";  
