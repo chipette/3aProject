@@ -1,0 +1,132 @@
+// MENU INTERACTIF
+svg {
+  display: block;
+  max-width: 50%;
+  margin: 40px auto;
+}
+
+
+.st2 {
+  fill:#E23F2F;
+  opacity: 0.9;
+}
+
+.st3 {
+  fill:#EE7130;
+  opacity:0.9;
+}
+
+.st4 {
+  fill:#FDD330;
+  opacity: 0.9;
+}
+
+.st5 {
+  fill:#6EBC4C;
+  opacity: 0.9;
+}
+
+.st6 {
+  fill:#3C63AB;
+  opacity: 0.9;
+}
+
+.st0 {
+  fill:#9E6FAD;
+}
+
+.st1 {
+  fill:#8E519D;
+}
+
+
+svg a #recrut:hover {
+  stroke: #e23f2f;
+  stroke-width: 3px;
+  opacity: 1;
+}
+
+svg a #services:hover {
+  stroke: #ee7130;
+  stroke-width: 3px;
+  opacity: 1;
+}
+
+svg a #tarifs:hover {
+  stroke: #FDD330;
+  stroke-width: 3px;
+  opacity: 1;
+}
+
+svg a #aidesFinancieres:hover {
+  stroke: #6EBC4C;
+  stroke-width: 3px;
+  opacity: 1;
+}
+
+svg a #contact:hover {
+  stroke: #3C63AB;
+  stroke-width: 3px;
+  opacity: 1;
+}
+
+svg a #accueil:hover .st0 {
+  stroke: #9E6FAD;
+  stroke-width: 2px;
+}
+
+svg a #accueil:hover .st1 {
+  stroke: #8E519D;
+  stroke-width: 2px;
+}
+
+
+// HEADER
+header.logo_header {
+  box-shadow: 0px 3px 5px #00000080;
+  border-bottom: 1px solid #000000;
+}
+
+section.bienvenue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../images/bg_blue_mobile.jpg);
+  background-size: cover;
+  padding: 40px 20px 40px 20px;
+
+  @media (min-width: $bpLarge){
+    padding: 100px 200px 100px 200px;
+  }
+
+  @media (min-width: $maxWidth){
+    padding: 100px 300px 100px 300px;
+  }
+
+  .img_header_mobile img,
+  .img_header img {
+      border-radius: 15px;
+  }
+
+  .txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 60px 0px 60px;
+    
+    h1 {
+      margin-top: 80px;
+      margin-bottom: 40px;
+      font-size: 4rem;
+      font-weight: bold;
+    }
+
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+  }
+}
