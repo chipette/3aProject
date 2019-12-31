@@ -1,1 +1,11 @@
 // feuille de style des BOUTTONS
+.ds {
+  font-family: $fontTitle;
+  font-size: 1.5rem;
+}
+
+.btn_tarifs {
+  background-color: $green;
+  color: $white;
+  margin-left: auto;
+}
