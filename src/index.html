@@ -368,18 +368,32 @@
   <main>
     <section class="presentation">
 
-      <h1>Vous êtes :</h1>
+      <h1 class="text-center">Vous êtes :</h1>
+
+      <!-- <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div> -->
 
       <div class="cartes container">
 
-        <a href="#recrutement">
-          <article class="carte-pro">
-            <img src="./images/pro_imgTransp.png" alt="aide à la personne">
-            <h3>un PRO du secteur ?</h3>
-            <p>Rencontrez-nous et informez-vous sur les opportunités de développer votre activité.</p>
-            <i class="fa fa-plus-circle" aria-hidden="true"></i>
-          </article>
-        </a>
+        <div class="card border" style="max-width:400px;">
+          <a href="#recrutement">
+          <!-- <article class="carte-pro"> -->
+            <img src="./images/pro_imgTransp.png" alt="aide à la personne" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-title">un PRO du secteur ?</h3>
+              <p class="card-text">Rencontrez-nous et informez-vous sur les opportunités de développer votre activité.</p>
+              <a href="#" class="btn btn-outline-primary badge-pill"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+              
+            </div>
+          <!-- </article> -->
+          </a>
+        </div>
 
         <a href="#services">
           <article class="carte-pro">
@@ -399,7 +413,7 @@
 
     <section class="pro" id="recrutement">
 
-      <h1>Vous êtes un PRO du secteur</h1>
+      <h1 class="text-center">Vous êtes un PRO du secteur</h1>
 
       <div class="container">
         <div class="auxiliaire"><img src="./images/AuxiliaireDeVie.jpg" alt="auxiliaire de vie">
