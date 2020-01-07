@@ -1,0 +1,12 @@
+.table.table_tarifs {
+  color: $crimson;
+  margin-bottom: 3rem;
+
+  @media (min-width: $bpLarge){
+    max-width: 40%;
+  }
+
+  td {
+    text-align: center;
+  }
+}

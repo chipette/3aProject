@@ -1,18 +1,30 @@
 // Layout
+$grid-breakpoints: (
+  xs: 0,
+  sm: 375px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
 $maxWidth: 1200px;
 $bpMedium: 768px;
-$bpLarge: 992px;
-$marge: 15px;
+$bpLarge : 992px;
+$marge   : 15px;
 
 // Typos
-$fontDefault: 'Trebuchet MS', sans-serif;
-$fontTitle: 'Raleway', $fontDefault;
+$fontDefault: 'Montserrat', 'Trebuchet MS', sans-serif;
+$fontTitle: 'Dancing Script', $fontDefault;
 
 // Colors
-// $color1:            
-// $color2:       
-// $color3:           
-// $color4:     
-// $color5:     
+$crimson    : #571A2C;
+$red        : #E23F2F;
+$orange     : #EE7130;
+$yellow     : #FDD330;
+$green      : #6EBC4C;
+$blue       : #3C63AB;
+$purple     : #8E519D;
+$puprleLight: #9E6FAD;
+$white      : #ffffff;
 
-// $linkColor: $color;
+$linkColor : $crimson;
