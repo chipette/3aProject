@@ -326,7 +326,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="recrutement.html">Recrutement</a> 
+                <a class="nav-link" href="#recrutement">Recrutement</a> 
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#services">Nos servicess</a>
@@ -368,30 +368,38 @@
   <main>
     <section class="presentation">
 
-      <h1>Vous êtes :</h1>
+      <h1 class="text-center">Vous êtes :</h1>
+
 
       <div class="cartes container">
 
-        <a href="#recrutement">
-          <article class="carte-pro">
-            <img src="./images/pro_imgTransp.png" alt="aide à la personne">
-            <h3>un PRO du secteur ?</h3>
-            <p>Rencontrez-nous et informez-vous sur les opportunités de développer votre activité.</p>
-            <i class="fa fa-plus-circle" aria-hidden="true"></i>
-          </article>
-        </a>
+        <div class="card border">
+          <a href="#recrutement">
+         
+            <img src="./images/pro_imgTransp.png" alt="aide à la personne" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-title text-center">un PRO du secteur ?</h3>
+              <p class="card-text">Rencontrez-nous et informez-vous sur les opportunités de développer votre activité.</p>
+              <a href="#" class="btn btn-outline-primary"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+            </div>
+          </a>
+        </div>
 
-        <a href="#services">
-          <article class="carte-pro">
-            <img src="./images/317689-P9J2JQ-844.jpg" alt="personnes agées">
-            <h3>un PARTICULIER ?</h3>
-            <p>Trouvez des solutions pour vous aider au quotidien, vous et vos proches.</p>
-            <i class="fa fa-plus-circle" aria-hidden="true"></i>
-          </article>
-        </a>
+      
 
-
-      </div>
+        <div class="card border">
+          <a href="#services">
+          
+            <img src= "./images/317689-P9J2JQ-844.jpg" alt="aide à la personne" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-title text-center">un PARTICULIER ?</h3>
+              <p class="card-text">Trouvez des solutions pour vous aider au quotidien, vous et vos proches.</p>
+              <a href="#" class="btn btn-outline-primary"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+            </div>
+          </a>
+        </div>
+ 
+      </div> <!-- /container-->
 
     </section>
 
@@ -399,7 +407,7 @@
 
     <section class="pro" id="recrutement">
 
-      <h1>Vous êtes un PRO du secteur</h1>
+      <h1 class="text-center">Vous êtes un PRO du secteur</h1>
 
       <div class="container">
         <div class="auxiliaire"><img src="./images/AuxiliaireDeVie.jpg" alt="auxiliaire de vie">
@@ -421,6 +429,52 @@
 
 
     <!-- SECTION SERVICES-Valentin -->
+
+    <section class="services">
+      <h1> Vous êtes un particulier :</h1>
+
+      <h2>Aide à l'autonomie</h2>
+      <ul>
+        <li>Aide au lever et au coucher</li>
+        <li>Aide à la toilette</li>
+        <li>Présence de nuit</li>
+      </ul>
+
+      <h2>Aide ménagère</h2>
+      <ul>
+        <li>Ménage</li>
+        <li>Lessive</li>
+        <li>Repassage</li>
+      </ul>
+
+      <h2>Accompagnement</h2>
+      <ul>
+        <li>Aux courses</li>
+        <li>Promenades</li>
+        <li>Aux sorties culturelles</li>
+      </ul>
+
+      <h2>Aide au repas</h2>
+      <ul>
+        <li>Aux courses</li>
+        <li>Préparation des repas</li>
+        <li>A la prise des repas</li>
+      </ul>
+
+      <h2>Aide administrative</h2>
+      <ul>
+        <li>Gestion des papiers</li>
+        <li>Aide au courrier</li>
+        <li>Démarches administratives</li>
+      </ul>
+
+      <a href="contactForm.html" target="_blank" class="btn btn_services badge-pill">Je contacte <span class="ds">3a</span></a>
+
+
+      
+
+
+    </section>
 
 
 
@@ -486,6 +540,17 @@
     </section>
 
     <!-- SECTION AIDE-Valentin -->
+
+    <section class="aides">
+      <img src="images/homme-benevole-prenant-soin-femme-agee_81894-293.jpg" alt="homme-benevole">
+      <h1>Les aides financières</h1>
+
+      <p> Toutes nos prestations, en mode mandataire, sont déductibles d'impôts à 50ù, peuvent être prise en charge par l'Allocation Personnalisée d'Autonomie (APA) et peuvent être réglées par Chèque Emploi Service Universel (CESU)</p>
+      
+      <a href="contactForm.html" target="_blank" class="btn btn_aides badge-pill">Plus d'informations</a>
+
+
+    </section>
 
 
 
