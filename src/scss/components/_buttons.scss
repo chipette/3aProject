@@ -4,8 +4,13 @@
   font-size: 1.5rem;
 }
 
-.btn_tarifs {
-  background-color: $green;
+.btn {
+  display: block;
+  background-color: $crimson;
   color: $white;
-  margin-left: auto;
+
+  @media (min-width: $bpMedium) {
+    display: inline-block;
+    margin-left: auto;
+  }
 }

@@ -293,10 +293,10 @@
           <div class="collapse navbar-collapse" id="navbarNavMobile">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="recrutement.html">Recrutement</a> 
+                <a class="nav-link" href="#recrutement">Recrutement</a> 
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#services">Nos servicess</a>
+                <a class="nav-link" href="#services">Nos services</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#tarifs">Nos tarifs</a>
@@ -329,7 +329,7 @@
                 <a class="nav-link" href="#recrutement">Recrutement</a> 
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#services">Nos servicess</a>
+                <a class="nav-link" href="#services">Nos services</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#tarifs">Nos tarifs</a>
@@ -352,8 +352,8 @@
         <div class="img_header d-none d-md-block"><img src="images/gpe_pa_header_txt.jpg" alt="groupe personne" class="text-center"></div>
 
         <div class="txt container">
-          <h2 class="d-block d-md-none text-center">Colore votre Vie !</h2>
-          <h1 class="d-none d-md-block">Bienvenue</h1>
+          <!-- <h2 class="d-block d-md-none text-center">Colore votre Vie !</h2> -->
+          <h1>Bienvenue</h1>
           <p class="d-none d-md-block">dans notre réseau d’agences de services à la personne spécialisé 
             dans l’aide à domicile pour les personnes âgées.</p>
           <p>Avec 3a vous êtes entre de bonnes mains.
@@ -378,9 +378,9 @@
          
             <img src="./images/img_card_pro.png" alt="aide à la personne" class="card-img-top">
             <div class="card-body">
-              <h3 class="card-title text-center">un PRO du secteur ?</h3>
+              <h3 class="card-title text-center">un <span class="upper">professionnel</span> du secteur ?</h3>
               <p class="card-text d-none d-md-block">Rencontrez-nous et informez-vous sur les opportunités de développer votre activité.</p>
-              <div class="btn btn_infos_plus"><i class="fa fa-plus-circle" aria-hidden="true"></i></div>
+              <i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i> 
             </div>
           </a>
         </div>
@@ -392,9 +392,9 @@
           
             <img src="./images/img_card_part.jpg" alt="aide à la personne" class="card-img-top">
             <div class="card-body">
-              <h3 class="card-title text-center">un PARTICULIER ?</h3>
+              <h3 class="card-title text-center">un <span class="upper">particulier</span> ?</h3>
               <p class="card-text d-none d-md-block">Trouvez des solutions pour vous aider au quotidien, vous et vos proches.</p>
-              <div class="btn btn_infos_plus"><i class="fa fa-plus-circle" aria-hidden="true"></i></div>
+              <i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
             </div>
           </a>
         </div>
@@ -405,7 +405,7 @@
 
     <!-- /////// SECTION PRO-Ghizlane ///// -->
 
-    <section class="pro" id="recrutement">
+    <section class="pro container" id="recrutement">
 
       <h1 class="text-center">Vous êtes un PRO du secteur</h1>
 
@@ -423,7 +423,7 @@
 
       <h3>Et si vous portiez votre tourche de couleur ?</h3>
 
-      <a href="recrutement.html" target="_blank" class="btn">Je postule</a>
+      <a href="recrutement.html" target="_blank" class="btn badge-pill">Je postule</a>
 
     </section>
 
@@ -481,15 +481,7 @@
 
       <a href="contactForm.html" target="_blank" class="btn btn_services badge-pill">Je contacte <span class="ds">3a</span></a>
 
-
-      
-
-
     </section>
-
-
-
-
 
 
     <!-- SECTION TARIFS-charline -->
@@ -552,7 +544,7 @@
 
     <!-- SECTION AIDE-Valentin -->
 
-    <section class="aides">
+    <section class="aides container">
       <img src="images/homme-benevole-prenant-soin-femme-agee_81894-293.jpg" alt="homme-benevole">
       <h1>Les aides financières</h1>
 
@@ -560,81 +552,67 @@
       
       <a href="contactForm.html" target="_blank" class="btn btn_aides badge-pill">Avantages fiscaux</a>
 
-
     </section>
-
-
-
+  </main>
 
     <!-- SECTION CONTACT-Ghizlane -->
 
-    <section class="contact container">
+    <section class="contact_footer">
 
-      <div class="coordonnees">
-        <h2>Contactez-nous</h2>
-        <p>par téléphone au :</br><span>09 56 35 22 29</span></p>
-        <p>Par mail :</br><span>Contact@3a.fr</span></p>
-      </div>
+      <div class="contact container">
+        <div class="coordonnees">
+          <h2 class="text-center">Contactez-nous</h2>
+          <div class="txt_contact">
+            <p>par téléphone au :</p>
+            <p><span class="bold">09 56 35 22 29</span></p>
+            <p>Par mail :</p>
+            <p><span class="bold">Contact@3a.fr</span></p>
+          </div>
+        </div>
 
-      <div class="geoloc">
-        <h2>Nos agences près de chez-vous</h2>
-        <article class="recherche">
-          <p>3a est un réseau national d'agences de Service à la personne</p>
-          <p>Trouver une agence</p>
-          <p><span>Saisissez l'adresse de la personne à aider pour trouver l'agence la plus proche.</span></p>
-        </article>
+        <div class="geoloc d-none d-md-block">
+          <h2 class="text-center">Nos agences près de chez-vous</h2>
+          <article class="recherche">
+            <p><span class="ds">3a</span> est un réseau national d'agences de Service à la personne</p>
+            <p>Saisissez l'adresse de la personne à aider pour trouver l'agence la plus proche.</p>
 
-        <article class="map d-none d-md-block">
-          <img src="images/map.jpg" alt="map">
-        </article>
-      </div>
+            <p><span class="bold">Trouvez une agence proche de chez vous</span></p>
 
-    </section>
-  </main>  
+            <form class="form-inline">
+              <input class="form-control" type="text" placeholder="Saisissez une adresse ..." aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Rechercher</button>
+            </form>
+            
+          </article>
 
+          <article class="map d-none d-lg-block">
+            <img src="images/map.jpg" alt="map">
+          </article>
+        </div>
+      </div><!--/contact container-->
 
+      <footer>
+        <div class="container">
+          <article class="rs">
+            <a href="http://www.facebook.fr" target="_blank"><img src="./images/rs_facebook.svg" alt="facebook" ></a>
+            <a href="http://www.twitter.fr" target="_blank"><img src="./images/rs_twitter.svg" alt="twitter"></a>
+            <a href="http://www.linkedin.fr" target="_blank"><img src="./images/rs_linkedin.svg" alt="linkedin"></a>
+          </article>
+    
+          <ul>
+            <li><a href="#services">Les services <span class="ds">3a</span></a></li>
+            <li><a href="#recrutement">Recrutement</a></li>
+            <li><a href="franchise3a-infos.html">Franchise</a></li>
+          </ul>
+    
+          <article class="copy text-center">
+            <p>Copyright 3a 2019 - Mentions légales</p>
+          </article>
+        </div>
+      </footer>
 
-
-
-  <!-- FOOTER-Ghizlane -->
-
-  <footer>
-    <section class="ft container">
-      <article class="rs">
-        <a href="#" target="_blank"><img src="./images/btn-fb.png" alt="facebook"></a>
-        <a href="#" target="_blank"><img src="./images/btn-tw.png" alt="twitter"></a>
-        <a href="#" target="_blank"><img src="./images/btn-ins.png" alt="instagram"></a>
-      </article>
-
-      <ul>
-        <li><a href="#">Les services <span>3a</span></a></li>
-        <li><a href="recrutement">Recrutement</a></li>
-        <li><a href="#">Franchise</a></li>
-      </ul>
-
-      <article>
-        <p>Copyright 3a 2019 - Mentions légales</p>
-      </article>
-    </section>
-
-  </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </section><!--/contact_footer-->
+  
 
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"

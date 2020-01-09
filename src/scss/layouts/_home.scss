@@ -1,9 +1,9 @@
 // section presentation
 .presentation {
-  padding: 100px 0px;
+  padding: 60px 0;
 
-  .cartes a {
-    color: $linkColor;
+  @media (min-width: $bpMedium){
+    padding: 100px 0;
   }
 }
 
@@ -17,12 +17,18 @@
     flex-direction: row;
     justify-content: space-evenly;
   }
+
+  a{
+    color: $linkColor;
+    text-decoration: none;
+  }
 } 
 
 .card {
+  flex-grow: 1;
   align-items: center;
-  padding: 40px 15px 20px 15px;
-  max-width: 300px;
+  padding: 40px 20px;
+  max-width: 225px;
   border-radius: 22px;
   
 
@@ -30,21 +36,19 @@
     box-shadow: 0px 0px 20px #00000071;
   }
 
+  &:nth-of-type(1){
+    margin-bottom: 60px;
+    
+    @media (min-width: $bpMedium) {
+      max-width: 300px;
+      margin-bottom: 0px;
+    }
+  }
+
   img {
     max-width: 157px;
     margin: 0 auto;
-  }
-
-  &:nth-of-type(1){
-    margin-bottom: 60px;
-
-    @media (min-width: $bpMedium) {
-      margin-bottom: 0px;
-    }
-
-    img {
-      margin-bottom: 20px;
-    }
+    margin-bottom: 20px;
   }
 }
 
@@ -52,14 +56,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0;
+
 
   .btn_infos_plus{
     font-size: 2rem;
     padding: 0;
-    margin-top: auto;
   }
 }
 
+.card-text {
+  padding-bottom: 15px;
+
+}
 
 //Section services
 .petale {
