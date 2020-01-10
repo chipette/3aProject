@@ -36,11 +36,14 @@
     box-shadow: 0px 0px 20px #00000071;
   }
 
+  @media (min-width: $bpMedium) {
+    max-width: 250px;
+  }
+
   &:nth-of-type(1){
     margin-bottom: 60px;
     
     @media (min-width: $bpMedium) {
-      max-width: 300px;
       margin-bottom: 0px;
     }
   }
