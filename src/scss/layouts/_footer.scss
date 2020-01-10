@@ -8,6 +8,10 @@
   @media (min-width: $bpMedium){
     padding-bottom: 20px;
   }
+
+  h2 {
+    margin-bottom: 2rem;
+  }
 }
 
 .txt_contact {
@@ -36,6 +40,10 @@
   .recherche {
     display: flex;
     flex-direction: column;
+
+    @media (min-width: $bpLarge) {
+      flex-direction: row;
+    }
   }
   form{
     input {
@@ -48,8 +56,12 @@
       border-radius: 0 4px 4px 0;
     }
   }
-  
+
+  .map img {
+    margin: auto;
+  }
 }
+
 
 footer {
   .container {
