@@ -8,20 +8,15 @@
   display: block;
   background-color: $crimson;
   color: $white;
+  
 
+  &:hover{
+    background-color: $orange;
+    color: $crimson;
+  }
   @media (min-width: $bpMedium) {
     display: inline-block;
     margin-left: auto;
   }
 }
 
-.btn_services {
-  display: block;
-  background-color: $crimson;
-  color: $white;
-
-  @media (min-width: $bpLarge) {
-    display: inline-block;
-    margin-left: auto;
-  }
-}
