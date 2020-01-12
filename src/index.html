@@ -281,6 +281,11 @@
       </svg>
     </div>
 
+  </header>
+
+  <main>
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
+
     <nav class="navbar navbar-expand-lg navbar-light fixed-bottom d-block d-md-none bg-white mobile_nav">
         <div class="container">
   
@@ -292,7 +297,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavMobile">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
+              <li class="active nav-item">
                 <a class="nav-link" href="#recrutement">Recrutement</a> 
               </li>
               <li class="nav-item">
@@ -313,56 +318,53 @@
         </div><!--/container-->
     </nav>   
   
-  </header>
 
-  <main> 
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top d-none d-md-block bg-white main_nav">
+      <div class="container">
 
-      <nav class="navbar navbar-expand-lg navbar-light sticky-top d-none d-md-block bg-white main_nav">
-        <div class="container">
-  
-          <a class="navbar-brand" href="index.html">
-            <img src="images/logo.svg" width="62" height="50" alt="logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#recrutement">Recrutement</a> 
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Nos services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#tarifs">Nos tarifs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#aides">Vos aides financières</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Nous Contacter</a>
-              </li>
-            </ul>
-          </div>
-  
-        </div><!--/contanier-->  
-      </nav>
-
-
-      <section class="bienvenue">
-        <div class="img_header_mobile d-block d-md-none"><img src="images/gpe_pa_header_mobile.jpg" alt="groupe personne" class="text-center"></div>
-        <div class="img_header d-none d-md-block"><img src="images/gpe_pa_header_txt.jpg" alt="groupe personne" class="text-center"></div>
-
-        <div class="txt container">
-          <!-- <h2 class="d-block d-md-none text-center">Colore votre Vie !</h2> -->
-          <h1>Bienvenue,</h1>
-          <p class="d-none d-md-block"><span class="ds">3a</span> est réseau d’agences de services à la personne spécialisé 
-            dans l’aide à domicile pour les personnes âgées.</p>
-          <p>Avec 3a vous êtes entre de bonnes mains.
-            Notre personnel est qualifié et expérimenté dans l’accompagnement des personnes âgées.</p>
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.svg" width="62" height="50" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="active nav-item">
+              <a class="nav-link" href="#recrutement">Recrutement</a> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Nos services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tarifs">Nos tarifs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aides">Vos aides financières</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Nous Contacter</a>
+            </li>
+          </ul>
         </div>
-      </section>
+
+      </div><!--/contanier-->  
+    </nav>
+
+
+    <section class="bienvenue">
+      <div class="img_header_mobile d-block d-md-none"><img src="images/gpe_pa_header_mobile.jpg" alt="groupe personne" class="text-center"></div>
+      <div class="img_header d-none d-md-block"><img src="images/gpe_pa_header_txt.jpg" alt="groupe personne" class="text-center"></div>
+
+      <div class="txt container">
+        <!-- <h2 class="d-block d-md-none text-center">Colore votre Vie !</h2> -->
+        <h1>Bienvenue,</h1>
+        <p class="d-none d-md-block"><span class="ds">3a</span> est réseau d’agences de services à la personne spécialisé 
+          dans l’aide à domicile pour les personnes âgées.</p>
+        <p>Avec 3a vous êtes entre de bonnes mains.
+          Notre personnel est qualifié et expérimenté dans l’accompagnement des personnes âgées.</p>
+      </div>
+    </section>
 
 
   
@@ -386,7 +388,6 @@
           </a>
         </div>
 
-      
 
         <div class="card border">
           <a href="#services">
@@ -407,9 +408,10 @@
     <!-- /////// SECTION PRO-Ghizlane ///// -->
 
     <section class="pro" id="recrutement">
-      <h1 class="text-center">Vous êtes un professionnel</h1>
-
+      
       <div class="container">
+        <h1 class="text-center">Vous êtes un professionnel</h1>
+
         <div class="pro_content">
           <div class="illus auxiliaire"><img src="./images/AuxiliaireDeVie.jpg" alt="auxiliaire de vie"></div>
           <article class="aventure">
@@ -422,10 +424,10 @@
           </article>
         </div><!--/pro_content-->
 
-        <a href="recrutement.html" target="_blank" class="btn btn_pro badge-pill">Je postule</a>
-
       </div><!--/container-->
 
+      <a href="recrutement.html" target="_blank" class="btn btn_pro badge-pill">Je postule</a>
+     
     </section>
 
 
@@ -434,69 +436,75 @@
     <section class="services container" id="services">
       <h1 class="text-center"> Vous êtes un particulier</h1>
 
-      <div class="illus fauteuil"><img class="mx-auto" src="images/benevole-poussant-fauteuil-roulant-vieillard-handicape_81894-277.jpg"  alt="fauteuil_roulant" ></div>
+      <img src="images/benevole-poussant-fauteuil-roulant-vieillard-handicape_81894-277.jpg"  alt="fauteuil_roulant" class="illus mx-auto">
 
-      <article class="row">
+      <article class="list">
 
-        <div class="col-sm-12 col-md-6">
-          <div class="petale">
-            <img src="images/panel_rouge.svg" width="100" alt="aide à l'autonomie">
-            <h2>Aide à l'autonomie</h2>
-          </div><!--/petale-->
-            <ul>
-              <li>Aide au lever et au coucher</li>
-              <li>Aide à la toilette</li>
-              <li>Présence de nuit</li>
-            </ul>
-        </div>
-
-        <div class="col-sm-12 col-md-6">
-          <div class="petale">
-            <img src="images/panel_orange.svg" width="100" alt="aide ménagère">
-            <h2>Aide ménagère</h2>
+        <div class="row">
+          <div class="col-md-12 col-lg-4 offset-lg-2 pt-3">
+            <div class="petale">
+              <img src="images/panel_rouge.svg" width="100" alt="aide à l'autonomie">
+              <h2>Aide à l'autonomie</h2>
+            </div><!--/petale-->
+              <ul>
+                <li>Aide au lever et au coucher</li>
+                <li>Aide à la toilette</li>
+                <li>Présence de nuit</li>
+              </ul>
           </div>
-            <ul>
-              <li>Ménage</li>
-              <li>Lessive</li>
-              <li>Repassage</li>
-            </ul>
-        </div>
 
-        <div class="col-sm-12 col-md-6">
-          <div class="petale">
-            <img src="images/panel_yellow.svg" width="100" alt="aide accompagnement">   
-            <h2>Accompagnement</h2>
+          <div class="col-md-12 col-lg-4 offset-lg-2 pt-3">
+            <div class="petale">
+              <img src="images/panel_orange.svg" width="100" alt="aide ménagère">
+              <h2>Aide ménagère</h2>
+            </div>
+              <ul>
+                <li>Ménage</li>
+                <li>Lessive</li>
+                <li>Repassage</li>
+              </ul>
           </div>
-            <ul>
-              <li>Aux courses</li>
-              <li>Promenades</li>
-              <li>Aux sorties culturelles</li>
-            </ul>
-        </div>
+        </div><!--/row-->
 
-        <div class="col-sm-12 col-md-6">
-          <div class="petale">
-            <img src="images/panel_vert.svg" width="100" alt="aide repas"> 
-            <h2>Aide au repas</h2>
+        <div class="row">
+          <div class="col-md-12 col-lg-4 offset-lg-2">
+            <div class="petale">
+              <img src="images/panel_yellow.svg" width="100" alt="aide accompagnement">   
+              <h2>Accompagnement</h2>
+            </div>
+              <ul>
+                <li>Aux courses</li>
+                <li>Promenades</li>
+                <li>Aux sorties culturelles</li>
+              </ul>
           </div>
-            <ul>
-              <li>Aux courses</li>
-              <li>Préparation des repas</li>
-              <li>A la prise des repas</li>
-            </ul>
-        </div>  
 
-        <div class="col-lg-12">
-          <div class="petale">
-            <img src="images/panel_bleu.svg" width="100" alt="aide administrative">   
-            <h2>Administratif</h2>
-          </div> 
-            <ul>
-              <li>Gestion des papiers</li>
-              <li>Aide au courrier</li>
-              <li>Démarches administratives</li>
-            </ul>
-        </div>    
+          <div class="col-md-12 col-lg-4 offset-lg-2 pt-3">
+            <div class="petale">
+              <img src="images/panel_vert.svg" width="100" alt="aide repas"> 
+              <h2>Aide au repas</h2>
+            </div>
+              <ul>
+                <li>Aux courses</li>
+                <li>Préparation des repas</li>
+                <li>A la prise des repas</li>
+              </ul>
+          </div>  
+        </div><!--/row-->
+
+        <div class="row">
+          <div class="col-md-12 col-lg-4 offset-lg-4 pt-3">
+            <div class="petale">
+              <img src="images/panel_bleu.svg" width="100" alt="aide administrative">   
+              <h2>Administratif</h2>
+            </div> 
+              <ul>
+                <li>Gestion des papiers</li>
+                <li>Aide au courrier</li>
+                <li>Démarches administratives</li>
+              </ul>
+          </div>    
+        </div><!--/row-->
 
       </article>  
 
@@ -509,9 +517,10 @@
 
     <!-- SECTION TARIFS-charline -->
     <section class="tarifs" id="tarifs">
-      <h1 class="text-center">Nos tarifs</h1>
-
+      
       <div class="container">
+        <h1 class="text-center">Nos tarifs</h1>
+
         <div class="tarifs_content">
           <div class="img_tarifs"><img src="images/img_tarifs2.jpg" alt="auxiliaire de vie"></div>
             <table class="table table_tarifs">
@@ -572,19 +581,18 @@
     <!-- SECTION AIDE-Valentin -->
 
     <section class="aides" id="aides">
-      <h1 class="text-center">Les aides financières</h1>
+      
+      <div class="container">
+        <h1 class="text-center">Les aides financières</h1>
 
-        <div class="container">
           <div class="aides_content">
             <div class="illus benevole"><img src="images/homme-benevole-prenant-soin-femme-agee_81894-293.jpg" alt="homme-benevole"></div>
 
             <p>Toutes nos prestations, en mode mandataire, sont déductibles d'impôts à 50%, peuvent être prise en charge par l'Allocation Personnalisée d'Autonomie (APA) et peuvent être réglées par Chèque Emploi Service Universel (CESU).</p>
           </div><!--/aides_content-->
 
-          <a href="http://www.pour-les-personnes-agees.gouv.fr/beneficier-daides/les-aides-domicile/les-aides-fiscales-pour-laide-domicile" target="_blank" class="btn btn_aides badge-pill">Avantages fiscaux</a>
-
         </div><!--/container-->
-
+        <a href="http://www.pour-les-personnes-agees.gouv.fr/beneficier-daides/les-aides-domicile/les-aides-fiscales-pour-laide-domicile" target="_blank" class="btn btn_aides badge-pill">Avantages fiscaux</a>
 
     </section>
   </main>
