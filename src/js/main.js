@@ -6,7 +6,7 @@ import 'bootstrap'; // j'importe bootstrap.js depuis node_modules
 
 $(document).ready(function () {
 
-  //Smooth scroll
+  //Smooth scroll main nav
   function scrollNav() {
     $('.navbar a').click(function(){  
       //Toggle Class
@@ -24,6 +24,59 @@ $(document).ready(function () {
   }
   scrollNav();
 
+  //smooth scroll card
+  function scrollCard() {
+    $('.card a').click(function(){  
+      //Toggle Class
+      $(".active").removeClass("active");      
+      $(this).closest('li').addClass("active");
+      var theClass = $(this).attr("class");
+      $('.'+theClass).parent('li').addClass('active');
+      //Animate
+      $('html, body').stop().animate({
+          scrollTop: $( $(this).attr('href') ).offset().top - 60
+      }, 400);
+      return false;
+    });
+    $('.scrollTop a').scrollTop();
+  }
+  scrollCard();
+
+  //Smooth scroll menu interactif
+  function scrollMenu() {
+    $('.menu a').click(function(){  
+      //Toggle Class
+      $(".active").removeClass("active");      
+      $(this).closest('li').addClass("active");
+      var theClass = $(this).attr("class");
+      $('.'+theClass).parent('li').addClass('active');
+      //Animate
+      $('html, body').stop().animate({
+          scrollTop: $( $(this).attr('href') ).offset().top - 60
+      }, 400);
+      return false;
+    });
+    $('.scrollTop a').scrollTop();
+  }
+  scrollMenu();
+
+  //Smooth scroll nav_footer
+  function scrollNavFooter() {
+    $('.nav_footer a').click(function(){  
+      //Toggle Class
+      $(".active").removeClass("active");      
+      $(this).closest('li').addClass("active");
+      var theClass = $(this).attr("class");
+      $('.'+theClass).parent('li').addClass('active');
+      //Animate
+      $('html, body').stop().animate({
+          scrollTop: $( $(this).attr('href') ).offset().top - 60
+      }, 400);
+      return false;
+    });
+    $('.scrollTop a').scrollTop();
+  }
+  scrollNavFooter();
 
   //Back to top
   $(window).scroll(function(){ 
