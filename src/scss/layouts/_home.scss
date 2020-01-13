@@ -1,261 +1,215 @@
 // section presentation
 .presentation {
-  padding: 40px 0;
+    padding: 40px 0;
 }
 
 .cartes {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 0 40px 0;
-
-  @media (min-width: $bpMedium) {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-  a{
-    color: $linkColor;
-    text-decoration: none;
-  }
-} 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 40px 0;
+    @media (min-width: $bpMedium) {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    a {
+        color: $linkColor;
+        text-decoration: none;
+    }
+}
 
 .card {
-  flex-grow: 1;
-  align-items: center;
-  padding: 40px 20px;
-  max-width: 225px;
-  border-radius: 22px;
-  
-
-  &:hover {
-    box-shadow: 0px 0px 20px #00000071;
-  }
-
-  @media (min-width: $bpMedium) {
-    max-width: 250px;
-  }
-
-  &:nth-of-type(1){
-    margin-bottom: 60px;
-    
-    @media (min-width: $bpMedium) {
-      margin-bottom: 0px;
+    flex-grow: 1;
+    align-items: center;
+    padding: 40px 20px;
+    max-width: 225px;
+    border-radius: 22px;
+    &:hover {
+        box-shadow: 0px 0px 20px #00000071;
     }
-  }
-
-  img {
-    max-width: 157px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
+    @media (min-width: $bpMedium) {
+        max-width: 250px;
+    }
+    &:nth-of-type(1) {
+        margin-bottom: 60px;
+        @media (min-width: $bpMedium) {
+            margin-bottom: 0px;
+        }
+    }
+    img {
+        max-width: 157px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
 }
 
 .card-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-
-
-  .btn_infos_plus{
-    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 0;
-    
-  }
+    .btn_infos_plus {
+        font-size: 2rem;
+        padding: 0;
+    }
 }
 
 .card-text {
-  padding-bottom: 15px;
-
+    padding-bottom: 15px;
 }
-
-
 
 //Section pro
 .pro {
-  display: flex;
-  flex-direction: column;
-  background: url(../images/9.jpg);
-  background-size: cover;
-  padding: 40px 0;
-
-  @media (min-width: $bpLarge) {
-    h1 {
-      margin-bottom: 24px;
-    }
-  }
-
-  .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
-    .pro_content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      @media (min-width: $bpLarge) {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-      }
-    }
-
-    .auxiliaire {
-      margin: 1rem auto;
-      @media (min-width: $bpLarge) {
-        margin: 0;
-        min-width: 250px;
-      }
-    }
-
-
+    background: url(../images/9.jpg);
+    background-size: cover;
+    padding: 40px 0;
     @media (min-width: $bpLarge) {
-      .aventure {
-      flex-basis: 50%;
-      padding: 0 20px;
-      }
+        h1 {
+            margin-bottom: 24px;
+        }
     }
-  }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .pro_content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media (min-width: $bpLarge) {
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .auxiliaire {
+            margin: 1rem auto;
+            @media (min-width: $bpLarge) {
+                margin: 0;
+                min-width: 250px;
+            }
+        }
+        @media (min-width: $bpLarge) {
+            .aventure {
+                flex-basis: 50%;
+                padding: 0 20px;
+            }
+        }
+    }
 }
-
-
 
 //Section services
 .services {
-  align-items: center;
-  padding: 40px 0px;
-
-  .row .col-sm-4 {
-    padding-left: 20px;
-
-    @media (min-width: $bpMedium) {
-      padding-left: 0px;
-      padding-right: 0px;
+    align-items: center;
+    padding: 40px 0px;
+    h1 {
+        margin-bottom: 24px;
     }
-  }
+    .row .col-sm-4 {
+        padding-left: 20px;
+        @media (min-width: $bpMedium) {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
 }
 
 .petale {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  position: relative;
-  padding-left: 15px;
-
-  h2 {
-    position: absolute;
-    left: 70px;
-    bottom: 0;
-  }
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    position: relative;
+    padding-left: 15px;
+    h2 {
+        position: absolute;
+        left: 70px;
+        bottom: 0;
+    }
 }
-
-
-
 
 // section tarifs
 .tarifs {
-  padding: 40px 0;
-
-  h1 {
-    margin-bottom: 0;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .tarifs_content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @media (min-width: $bpLarge) {
-      flex-direction: row;
-      align-items: flex-start;
-      margin-top: 40px;
+    padding: 40px 0;
+    h1 {
+        margin-bottom: 0;
     }
-
-    .img_tarifs {
-      margin: 1rem auto;
-
-      @media (min-width: $bpLarge) {
-        margin: 0 15px 0 0;
-      }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-
-    table {
-      margin: 0 auto;
-
-      @media (min-width: $bpLarge) {
-        margin: 0 0 0 15px;
-      }
+    .tarifs_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media (min-width: $bpLarge) {
+            flex-direction: row;
+            align-items: flex-start;
+            margin-top: 40px;
+        }
+        .img_tarifs {
+            margin: 1rem auto;
+            @media (min-width: $bpLarge) {
+                margin: 0 15px 0 0;
+            }
+        }
+        table {
+            margin: 0 auto;
+            @media (min-width: $bpLarge) {
+                margin: 0 0 0 15px;
+            }
+        }
     }
-  }
-
-  .txt_tarifs {
-    font-size: 0.75rem;
-
-    p:nth-of-type(1) {
-      margin-bottom: 8px;
+    .txt_tarifs {
+        font-size: 0.75rem;
+        p:nth-of-type(1) {
+            margin-bottom: 8px;
+        }
+        p:nth-of-type(2) {
+            margin-bottom: 50px;
+        }
     }
-
-    p:nth-of-type(2) {
-      margin-bottom: 50px;
-    }
-  }
 }
-
 
 // Aides
 .aides {
-  display: flex;
-  flex-direction: column;
-  padding: 40px 0;
-
-  @media (min-width: $bpLarge) {
-    h1 {
-      margin-bottom: 24px;
-    }
-  }
-
-  .container {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-
-    .aides_content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      @media (min-width: $bpLarge) {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .illus {
-        margin: 1rem auto;
-    
-        @media (min-width: $bpLarge) {
-          margin: 0;
-          min-width: 250px;
+    padding: 40px 0;
+    @media (min-width: $bpLarge) {
+        h1 {
+            margin-bottom: 24px;
         }
-      }
-
-      p {
-        margin-bottom: 15px;
-
-        @media (min-width: $bpLarge) {
-          flex-basis: 50%;
-          padding: 0 20px;
-        }
-      }
     }
-  }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .aides_content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media (min-width: $bpLarge) {
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            .illus {
+                margin: 1rem auto;
+                @media (min-width: $bpLarge) {
+                    margin: 0;
+                    min-width: 250px;
+                }
+            }
+            p {
+                margin-bottom: 15px;
+                @media (min-width: $bpLarge) {
+                    flex-basis: 50%;
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
 }
